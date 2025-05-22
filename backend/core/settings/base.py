@@ -32,6 +32,9 @@ INSTALLED_APPS = [
     "jazzmin",
 
     # local apps
+    "apps.analytics",
+    "apps.auth",
+    "apps.messages",
     "apps.api",
     "apps.followers",
     "apps.notifications",
