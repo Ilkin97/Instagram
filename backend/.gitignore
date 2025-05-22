@@ -1,0 +1,82 @@
+# === PYTHON / DJANGO ===
+Pipfile
+Pipfile.lock
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# If using PostgreSQL/MySQL dump files
+*.sql
+
+# Django migrations
+**/migrations/
+!*/migrations/__init__.py
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+env.bak/
+env/
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytest
+.cache
+.pytest_cache/
+
+# coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# vscode / IDE
+.vscode/
+.idea/
+
+# === REACT (Frontend) ===
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Build files
+build/
+dist/
+
+# dotenv files
+*.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
