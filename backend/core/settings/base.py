@@ -12,6 +12,8 @@ ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
+SITE_ID = 1
+
 INSTALLED_APPS = [
     # Django apps
     "django.contrib.admin",
@@ -32,18 +34,19 @@ INSTALLED_APPS = [
     "jazzmin",
 
     # local apps
-    "apps.analytics",
-    "apps.auth",
-    "apps.messages",
-    "apps.api",
-    "apps.followers",
+    "apps.messages.apps.MessagesConfig",
+    "apps.auth.apps.AuthConfig",
     "apps.notifications",
-    "apps.posts",
-    "apps.reels",
-    "apps.search",
+    "apps.followers",
+    "apps.analytics",
     "apps.settings",
     "apps.stories",
-    "apps.users",
+    "apps.search",
+    "apps.posts",
+    "apps.reels",
+    "apps.users.apps.UsersConfig",
+    # "apps.users",
+    "apps.api",
 ]
 
 MIDDLEWARE = [

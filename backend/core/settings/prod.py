@@ -3,6 +3,8 @@ from .base import *
 DEBUG = False
 ALLOWED_HOSTS = ["yourdomain.com", "www.yourdomain.com"]
 
+SITE_ID = 2
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
