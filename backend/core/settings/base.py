@@ -35,6 +35,7 @@ INSTALLED_APPS = [
 
     # local apps
     "apps.messages.apps.MessagesConfig",
+    "apps.users.apps.UsersConfig",
     "apps.auth.apps.AuthConfig",
     "apps.notifications",
     "apps.followers",
@@ -44,8 +45,6 @@ INSTALLED_APPS = [
     "apps.search",
     "apps.posts",
     "apps.reels",
-    "apps.users.apps.UsersConfig",
-    # "apps.users",
     "apps.api",
 ]
 
