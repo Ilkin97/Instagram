@@ -16,6 +16,7 @@ SITE_ID = 1
 
 INSTALLED_APPS = [
     # Django apps
+    "jazzmin",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -31,7 +32,6 @@ INSTALLED_APPS = [
     "corsheaders",
     "celery",
     "redis",
-    "jazzmin",
 
     # local apps
     "apps.messages.apps.MessagesConfig",
@@ -102,7 +102,7 @@ DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL")
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://your-frontend-domain.com",
+    # "https://your-frontend-domain.com",
 ]
 CORS_ALLOW_HEADERS = [
     'content-type', 'authorization', 'x-csrftoken', 'accept', 'origin',
@@ -137,7 +137,7 @@ LOGGING = {
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],  # veya [] olarak bırakabilirsin
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -149,3 +149,7 @@ TEMPLATES = [
         },
     },
 ]
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "darkly",
+}
